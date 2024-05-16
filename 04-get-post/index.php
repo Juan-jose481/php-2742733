@@ -29,8 +29,7 @@ echo $userEmail;
     <input id="username" type="text" placeholder="Username..." name="username">
     <br>
     <label for="useremail" required>Useremail</label>
-    <input id="useremail" type="email" placeholder="Useremail..." required
-    name="useremail">
+    <input id="useremail" type="email" placeholder="Useremail..." requiredname="useremail">
     <br>
     <label for="color">Color</label>
     <input id="color" type="text" name="color" placeholder="Color para el fondo...">
