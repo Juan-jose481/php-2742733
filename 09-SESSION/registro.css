@@ -1,0 +1,19 @@
+.contenedor{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.card{
+    border-radius: 1px;
+    left: 30rem;
+    top: 1rem;
+    box-shadow: 5px 9px 15px 1px black;
+}
+
+.card-body{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+}

@@ -56,30 +56,59 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <title>Document</title>
+    <link rel="stylesheet" href="registro.css">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"></script>
 </head>
 
 <body>
 
-    <h1>registrate</h1>
+<div class="card" style="width: 25rem ">
+    <div class="card-body">
+            <h1>Registrate</h1>
 
-    <form action="registro.php" method="POST">
-        <label for="user">usuario</label>
-        <input type="text" placeholder="usuario" name="user">
-        <label for="password">contraseña</label>
-        <input type="text" placeholder="password" name="password">
-        <label for="mail">correo</label>
-        <input type="email" placeholder="email" name="email">
-        <button type="submit">registrate</button>
+            <br>
 
+        <form action="registro.php" method="POST">
 
-    </form>
+            <label for="user">usuario</label>
+            <br><br>
+            <input type="text" placeholder="usuario" name="user">
+            <br><br>
+            <label for="password">contraseña</label>
+            <br><br>
+            <input type="text" placeholder="password" name="password">
+            <br><br>
+            <label for="mail">correo</label>
+            <br><br>
+            <input type="email" placeholder="email" name="email">
+            <br><br>
+            <button type="submit">registrate</button>
 
-    <?php if( isset($_SESSION['userRegister']) ) : ?>
+        </form>
+
+        <?php if( isset($_SESSION['userRegister']) ) : ?>
         <p>Datos registrados, ya puedes iniciar sesion</p>
         <p> <?php echo $_SESSION['userRegister'] . ' - ' . $_SESSION ['passRegister'] ?> </p>
         <a href="index.php">iniciar sesion</a>
-    <?php endif ?>
+        <?php endif ?>
+
+    </div>
+</div>
+
+    
+
+    
 
 </body>
 
