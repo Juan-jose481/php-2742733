@@ -76,23 +76,19 @@ if( $_SERVER["REQUEST_METHOD"] == 'POST' ){
 <div class="card" style="width: 25rem ">
     <div class="card-body">
         <h1>Pagina de inicio</h1>
-
         <br>
-
         <form action="index.php" method="POST">
             <label for="user">Usuario</label>
-            <br><br>
-            <input type="text" placeholder="usuario" name="user">
-            <br><br>
+            <br>
+            <input type="text" placeholder="Usuario" name="user">
+            <hr>
             <label for="password">Contraseña</label>
-            <br><br>
-            <input type="text" placeholder="password" name="password">
-            <br><br>
+            <br>
+            <input type="text" placeholder="Password" name="password">
+            <hr>
             <button type="submit">Inicio sesion</button>
         </form>
-
         <br>
-
         <a href="./registro.php">Registrate</a>
     </div>
 </div>
