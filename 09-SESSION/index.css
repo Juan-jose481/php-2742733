@@ -1,8 +1,4 @@
-.contenedor{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-}
+
 
 .card{
     border-radius: 1px;

@@ -68,28 +68,30 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
   <div class="card" style="width: 25rem ">
     <div class="card-body">
-      <h1 pryma>Registrate</h1>
+      <h1>Registrate</h1>
       <br>
       <form action="registro.php" method="POST">
         <label for="user">Usuario</label>
         <br>
-        <input type="text" placeholder="Usuario" name="user">
+        <input type="text" placeholder="Usuario..." name="user">
         <hr>
         <label for="password">Contraseña</label>
         <br>
-        <input type="text" placeholder="Password" name="password">
+        <input type="text" placeholder="Password..." name="password">
         <hr>
         <label for="mail">Correo</label>
         <br>
-        <input type="email" placeholder="Email" name="email">
+        <input type="email" placeholder="Email..." name="email">
         <hr>
         <button type="submit">Registrate</button>
       </form>
 
+      <br>
+
       <?php if (isset($_SESSION['userRegister'])) : ?>
+        <a href="index.php">Iniciar sesion</a>
         <p>Datos registrados, ya puedes iniciar sesion</p>
         <p> <?php echo $_SESSION['userRegister'] . ' - ' . $_SESSION['passRegister'] ?> </p>
-        <a href="index.php">Iniciar sesion</a>
       <?php endif ?>
 
     </div>
