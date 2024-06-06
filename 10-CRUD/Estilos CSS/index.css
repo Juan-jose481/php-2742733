@@ -31,13 +31,6 @@ body{
     justify-content: center;
 }
 
-.inputt{
-    border: none;
-    border-radius: 20px;
-    height: 30px;
-    font-size: 18px;
-}
-
 .contraseña{
     border: none;
     border-radius: 20px;
@@ -54,7 +47,7 @@ body{
 
 .registra{
     border: none;
-    border-radius: 20px;
+    border-radius: 30px;
     height: 30px;
     font-size: 18px;
 }

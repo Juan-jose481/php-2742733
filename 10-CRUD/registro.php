@@ -5,10 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="registro.css">
-
-
-
+    <link rel="stylesheet" href="../10-CRUD/Estilos CSS/registro.css">
 </head>
 
 <body>
@@ -32,7 +29,9 @@
                     <br><br>
                     <button class="registra" type="submit">Registrate</button>
                             
-                </form>      
+                </form>   
+                <br>
+                <a href="./index.php">Iniciar sesión</a>
             </div>
 
             <br>
@@ -59,23 +58,23 @@
                         echo 'Rellene completo el formulario';
                     } else {
                         //echo $usuario . ' - ' . $password;
-                        $_SESSION['userRegister'] = $usuario;
+                        /* $_SESSION['userRegister'] = $usuario;
                         $_SESSION['passRegister'] = $password;
-                        $_SESSION['emailRegister'] = $email;
+                        $_SESSION['emailRegister'] = $email; */
 
                         //echo ' - variables de sesion guardadas🥶';
                         //header('location: index.php');
 
                         try {
                             $conexion = new PDO("mysql: host=localhost; dbname=focaapp;", 'root', '');
-                            echo "Conexion OK";
+                            echo "Conexion OKKK";
                         } catch (PDOException $e) {
                             echo "Error: " . $e->getMessage();
                         }
 
 
 
-                        $statement = $conexion->prepare("INSERT INTO `userapp`( `ID`, `username`, `correo`, `contraseña`) VALUES (NULL, :username, :pass ,:correo)");
+                        $statement = $conexion->prepare("INSERT INTO `userapp`( `ID`, `username`, `contraseña`, `correo`) VALUES (NULL, :username, :pass ,:correo)");
 
 
                         $statement->execute(array(":username" => $usuario, ":pass" => $password, ":correo" => $email));

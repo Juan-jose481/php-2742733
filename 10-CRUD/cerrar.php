@@ -11,12 +11,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="../10-CRUD/Estilos CSS/cerrar.css">
 </head>
 <body>
 
-    <h1>sesion cerrada</h1>
-    <a href="./user.php">user page</a>
-    <a href="./cerrar.php">iniciar sesion</a>
+    <div class="contenedor">
+         <div class="carta">
+                <h1>Sesión cerrada 😅</h1>
+                <a href="./user.php">User page</a>
+        </div>
+    </div>
     
 </body>
 </html>
