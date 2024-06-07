@@ -10,6 +10,17 @@
 
 <body>
 
+    <header class="arriba">
+            
+            <div class="inicios">
+                <a class="inicio" href="">Home</a>
+                <div class="dos">
+                    <a class="botones" href="">Iniciar sesión</a>
+                    <a class="botones" href="">Registrarse</a>
+                </div>
+            </div>
+    </header>
+
     <div class="contenedor">
         <div class="carta">
             <h1>Registrate</h1>
@@ -31,19 +42,15 @@
                             
                 </form>   
                 <br>
-                <a href="./index.php">Iniciar sesión</a>
+                <a class="iniciar" href="./index.php">Iniciar sesión</a>
             </div>
-
             <br>
-
             <?php if (isset($_SESSION['userRegister'])) : ?>
                 <p>Datos registrados, ya puedes iniciar sesion</p>
                 <p> <?php echo $_SESSION['userRegister'] . ' - ' . $_SESSION['passRegister'] ?> </p>
                 <a href="index.php">iniciar sesion</a>
             <?php endif ?>
-
             <?php session_start();
-
                 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                     echo 'Datos enviados';
 
@@ -86,6 +93,7 @@
                 }
             ?>
         </div>
+        <img class="aldea" src="../10-CRUD/Imagenes/aldea1.png" alt="">
     </div>
 </body>
 </html>

@@ -1,15 +1,50 @@
 *{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    background-repeat: no-repeat;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif 
 }
 
+
 body{ 
+    background-image: url(../Imagenes/FONDO\ NASH.jpg);
     background-size: cover;
-    background-color: #191414;
-    background: linear-gradient(rgba(255, 153, 153, 0.733) 0%, rgb(0, 0, 0) 100%);
-    height: 100vh;
+    background-repeat: no-repeat;
+}
+
+.inicios{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 1rem;
+}
+
+.inicio{
+    color: black;
+    background-color: rgb(255, 255, 255);
+    padding: 10px 15px 10px 15px;
+    border-radius: 1rem;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+.inicio:hover{
+    background-color: rgb(111, 255, 143);
+    transition: 1.5s;
+}
+
+.dos{
+    display: flex;
+    gap: 2rem;
+}
+
+.arriba{
+    background-color: rgb(255, 255, 255);
 }
       
-
 .carta{
     width: 20rem;
     background-color: #75c1ff;
@@ -25,10 +60,12 @@ body{
 }
 
 .contenedor{
+    top: 4rem;
+    position: relative;
     display: flex;
     width: 100%;
     height: max-content;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 
 .inputt{
@@ -60,6 +97,32 @@ body{
 }
 
 .registra:hover{
-    background-color: rgba(0, 0, 0, 0.441);
-    transition-duration: 1s;
+    background-color: rgba(255, 91, 91, 0.441);
+    transition-duration: 1.5s;
+}
+
+.aldea{
+    position: relative;
+    top: 6rem;
+    width: 20rem;
+    height: 20rem;
+}
+
+.aldea:hover{
+    transform: scale(1.5);
+    transition-duration: 1.5s;
+}
+
+.iniciar{
+    color: black;
+    background-color: rgb(255, 255, 255);
+    padding: 5px 10px 5px 10px;
+    border-radius: 1rem;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.iniciar:hover{
+    background-color: rgba(255, 107, 107, 0.441);
+    transition-duration: 1.5s;
 }
